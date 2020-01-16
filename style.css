@@ -4,7 +4,7 @@ body{
 	/*background: linear-gradient(to top left, darkmagenta, darkslateblue);*/
 	/*background: linear-gradient(to top left, plum, indigo);*/
 	/*background: linear-gradient(to top left, black, darkslategray);*/
-	background: white;
+	background: silver;
 	color: black;
 	font-family: "Courier New", monospace;
  	font-size: 20px;
@@ -17,7 +17,7 @@ body{
 }
 
 .header{
-	/*display: grid;*/
+	display: grid;
  	text-align: right;
  	line-height: 1.5;
  }
