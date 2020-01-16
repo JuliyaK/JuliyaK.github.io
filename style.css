@@ -4,7 +4,7 @@ body{
 	/*background: linear-gradient(to top left, darkmagenta, darkslateblue);*/
 	/*background: linear-gradient(to top left, plum, indigo);*/
 	/*background: linear-gradient(to top left, black, darkslategray);*/
-	background: silver;
+	background: white;
 	color: black;
 	font-family: "Courier New", monospace;
  	font-size: 20px;
@@ -110,7 +110,7 @@ h3{
   position: relative;
   max-width: 400px;
   margin: 50px auto 0;
-  background: white;
+  background: #bfd5ff;
   border-radius: 30px;
 }
 .form-left-decoration,
@@ -139,7 +139,7 @@ h3{
   width: 50px;
   height: 20px;
   border-radius: 30px;
-  background: white;
+  background: #bfd5ff;
 }
 .form-left-decoration:before {top: -20px;}
 .form-left-decoration:after {
