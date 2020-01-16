@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mom's site</title>
+	<link rel='StyleSheet' type='text/css' href='style.css' />
+	
+</head>
+<body>
+<div class="block1">
+	
+			<img src="4.png" class="icon">
+	<div class="name">
+			<p>laboratorio delle fate</p>
+	</div>
+	<div class="header">
+		<a href="#about_me" class="s13">О нас</a>
+		<a href="#work" class="s13">Работы</a>
+		<a href="#coment" class="s13">Отзывы</a>
+		<a href="#phone" class="s13">Контакты</a>
+	</div>
+
+	
+</div>
+	
+
+	<div class="content">
+		<a id="about"></a><h3>О нас</h3>
+			<div class="text_about_me">
+				<div class="dbl-border">
+				  <div class="image-wrapper">
+				    <img src="1.png">
+				  </div>
+				</div>
+				<div>
+					Привет, дорогой посетитель! Давай знакомиться.<br>
+					Меня зовут Света. Очень люблю активный отдых, животных.<br>
+					Меня вдохновляют люди и их действия. Так же идеи для своих работ 
+					я нахожу на <a href="https://www.pinterest.ru/" target="_blank" class="s13">Pinterest</a> 
+					это очень удобный сервис, зайдите посмотреть на досуге <br> и Вы найдете что-то там для себя.
+				</div>
+				
+			</div>
+
+<ul id="slides">
+	<a href="https://www.pinterest.ru/" target="_blank" title="Работы" class="s13">
+		<li class="slide showing"><img src="1.png" class="icons"></li>
+	    <li class="slide"><img src="4.png" class="icons"></li>
+	    <li class="slide"><img src="2.png" class="icons"></li>
+	    <li class="slide"><img src="3.png" class="icons"></li>
+	    <li class="slide"><img src="5.png" class="icons"></li>
+	</a>
+    
+</ul>
+<script>
+	var slides = document.querySelectorAll('#slides .slide');
+	var currentSlide = 0;
+	var slideInterval = setInterval(nextSlide,2000);
+
+	function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+
+		<a id="history"></a><h3>История</h3>
+			<div class="text_history">
+				<div class="txt">laboratorio delle fate начала свое существование в 2018 году и вот, в 2020 году, я знакомлю Вас со своим творчеством. Территориально мы находимся в России, Иркутской области, Саянской Деревне. Но рано растраиваться, у нас есть доставка в г.Саянск и другие города России.</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8342.852522728657!2d102.12608072143968!3d54.07137022956472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d03b1fbadaf3d15%3A0x8309e1f4ef37223!2z0KHQsNGP0L3RgdC60LDRjyDQtNC10YDQtdCy0L3Rjw!5e0!3m2!1sru!2sru!4v1578318667748!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		<a id="coment"></a><h3>Отзывы</h3>
+			<div class="my_coment">
+			
+
+			<form class="decor">
+			  <div class="form-left-decoration"></div>
+			  <div class="form-right-decoration"></div>
+			  <div class="circle"></div>
+			  <div class="form-inner">
+			    <h3>Написать нам отзыв</h3>
+			    <input type="text" placeholder="Username">
+			    <input type="sms" placeholder="Email">
+			    <textarea placeholder="Сообщение..." rows="3"></textarea>
+			    <input type="submit" value="Отправить">
+			  </div>
+			</form>
+
+		</div>
+
+		<a id="work"></a><h3>Работы</h3>
+			<div class="my_work">
+				
+			</div>
+		<a id="phone"></a><h3>Контакты</h3>
+			<div class="my_data">
+				
+			</div>
+	</div>
+	<div class="footer">&copy;Кашлакова Ю.А., 2020</div>
+
+</body>
+</html>

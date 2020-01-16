@@ -1,0 +1,265 @@
+body{
+	/*background: linear-gradient(90deg, black, darkslategray);*/
+	/*background: linear-gradient(90deg, plum, indigo);*/
+	/*background: linear-gradient(to top left, darkmagenta, darkslateblue);*/
+	/*background: linear-gradient(to top left, plum, indigo);*/
+	/*background: linear-gradient(to top left, black, darkslategray);*/
+	background: white;
+	color: black;
+	font-family: "Courier New", monospace;
+ 	font-size: 20px;
+}
+
+.block1{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-image: url(im.jpg);
+}
+
+.header{
+	/*display: grid;*/
+ 	text-align: right;
+ 	line-height: 1.5;
+ }
+
+ .name{
+ 	text-align: center;
+ 	font-family: "Brush Script MT", cursive;
+ 	/*font-family: "Bradley Hand", cursive;*/
+ 	font-size: 60px;
+ }
+
+ .icon{
+ 	width: 200px;
+ 	height: 200px;
+ }
+
+p{
+	margin-left: -200px;
+}
+
+a{
+
+	font-size: 20px;
+	color: white;
+
+
+	text-transform: uppercase;
+}
+h3{
+	font-family: "Brush Script MT", cursive;
+	text-align: center;
+}
+
+.text_about_me{
+	display: grid;
+ 	grid-template-columns: 1fr 1fr;
+}
+
+* {box-sizing: border-box;}
+.dbl-border {
+  position: relative;
+  display: table;
+  margin: 50px auto;
+}
+.dbl-border img {display: block;	width: 200px;
+ 	height: 200px;}
+ 	/*margin-top: -20px;}*/
+.dbl-border:before, 
+.dbl-border:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #40D8EC;
+}
+.dbl-border:before {
+  top: -15px;
+  left: -15px;
+}
+.dbl-border:after {
+  right: -15px;
+  bottom: -15px;
+}
+.image-wrapper {
+  position: relative;
+  z-index: 2;
+  padding: 5px;
+  background: white;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.1);
+  	width: 200px;
+ 	height: 200px;
+}
+
+.text_history{
+	display: grid;
+ 	grid-template-columns: 1fr 1fr;
+	
+}
+
+.txt{
+	text-align: center;
+	margin-top: 150px;
+
+}
+
+* {box-sizing: border-box;}
+/*body {background: linear-gradient(to top left, darkmagenta, darkslateblue);}*/
+.decor {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  background: white;
+  border-radius: 30px;
+}
+.form-left-decoration,
+.form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: linear-gradient(to top left, darkmagenta, darkslateblue);
+  border-radius: 20px;
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
+.form-left-decoration:before {top: -20px;}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.form-inner {padding: 50px;}
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #E9EFF6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+  margin-top: 30px;
+  background: linear-gradient(to top left, darkmagenta, darkslateblue);
+  border-bottom: 4px solid silver;
+  color: white;
+  font-size: 14px;
+}
+.form-inner textarea {resize: none;}
+.form-inner h3 {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+    position: relative;
+    height: 450px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: white;
+    color: #fff;
+    text-align: center;
+}
+
+
+ .icons{
+ 	width: 400px;
+ 	height: 400px;
+
+ }
+
+/*.slide:nth-of-type(1){
+    background: red;
+}
+.slide:nth-of-type(2){
+    background: orange;
+}
+.slide:nth-of-type(3){
+    background: green;
+}
+.slide:nth-of-type(4){
+    background: blue;
+}
+.slide:nth-of-type(5){
+    background: purple;
+}
+*/
